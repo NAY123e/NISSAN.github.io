@@ -97,7 +97,7 @@ header h1 {
 
 /* Stylish Button */
 .product-detail button {
-    background: linear-gradient(45deg, #28a745, #20c997); /* Gradient color */
+    background: linear-gradient(145deg, #ffffff, #f0f2f5);
     color: white;
     padding: 12px 24px;
     border: none;
