@@ -8,6 +8,61 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+    <style>
+        /* Toast Container Styling */
+.toast-container {
+    z-index: 1055;
+}
+
+.toast {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: fadeInUp 0.4s ease-out;
+}
+
+.toast-header {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toast-header .btn-close {
+    filter: invert(1);
+}
+
+.toast-body {
+    font-size: 14px;
+    padding: 15px;
+    background-color: #28a745;
+    color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toast-body::before {
+    content: "✅ ";
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+/* Toast Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
 <body>
 
     <header style="background-color: white;">
