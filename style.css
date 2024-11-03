@@ -6,13 +6,18 @@
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f1f3f5;
+    background-color: #f4f6f9;
 }
 
 /* Product Section Styling */
@@ -21,7 +26,7 @@ body {
     max-width: 1200px;
     margin: auto;
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,8 +40,8 @@ body {
     border: none;
     padding: 20px;
     text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #ffffff, #f0f2f5);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1), -4px -4px 15px rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -49,7 +54,12 @@ body {
 .product-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
 }
 
 .product-item h3 {
@@ -69,17 +79,18 @@ body {
 .product-item button {
     background: linear-gradient(45deg, #0d6efd, #6610f2);
     color: #ffffff;
-    padding: 10px 25px;
+    padding: 12px 28px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
 }
 
 .product-item button:hover {
     background: linear-gradient(45deg, #6610f2, #0d6efd);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
 }
 
 /* Notification Styling */
