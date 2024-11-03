@@ -13,8 +13,8 @@
     justify-content: center;
     min-height: 100vh;
     padding: 40px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #ffffff;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* ปรับสีพื้นหลัง */
+    color: #ffffff; /* สีข้อความ */
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -22,6 +22,7 @@
 .contact-container h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ข้อความ */
 }
 
 .contact-container p {
@@ -38,8 +39,8 @@
 .social-icons .icon {
     width: 60px;
     height: 60px;
-    background-color: #ffffff;
-    color: #2575fc;
+    background-color: #ffffff; /* สีพื้นหลังของไอคอน */
+    color: #ff7e5f; /* สีข้อความ */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -50,8 +51,8 @@
 }
 
 .social-icons .icon:hover {
-    background-color: #2575fc;
-    color: #ffffff;
+    background-color: #ff7e5f; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    color: #ffffff; /* เปลี่ยนสีข้อความเมื่อ hover */
 }
 
 /* การตั้งค่าการตอบสนองหน้าจอ */
